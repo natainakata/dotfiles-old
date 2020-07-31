@@ -1,0 +1,26 @@
+# ホワイトリスト方式
+
+/*
+/.**
+
+!/.zshrc
+!/.zshenv
+!/fish/
+/fish/**
+!/fish/config.fish
+!/fish/conf.d/
+!/fish/functions/
+/fish/functions/**
+!/vim/
+/vim/**
+!/vim/init.vim
+!/vim/_config/*
+!/vim/coc-settings.json
+!/tmux/
+!/tmux/.tmux.conf
+
+
+!/README.md
+!/LICENSE
+!.gitignore
+!.gitkeep
