@@ -1,26 +1,9 @@
-# ホワイトリスト方式
-
-/*
-/.**
-
-!/.zshrc
-!/.zshenv
-!/fish/
-/fish/**
-!/fish/config.fish
-!/fish/conf.d/
-!/fish/functions/
-/fish/functions/**
-!/vim/
-/vim/**
-!/vim/init.vim
-!/vim/_config/**
-!/vim/coc-settings.json
-!/tmux/
-!/tmux/.tmux.conf
+/vim/autoload/plug.vim
+/vim/plugged/
+/fish/completions/
+/fish/conf.d/
+/fish/functions/
+/fish/fishfile
+/fish/fish_variables
 
 
-!/README.md
-!/LICENSE
-!.gitignore
-!.gitkeep
