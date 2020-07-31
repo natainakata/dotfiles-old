@@ -14,7 +14,7 @@
 !/vim/
 /vim/**
 !/vim/init.vim
-!/vim/_config/*
+!/vim/_config/**
 !/vim/coc-settings.json
 !/tmux/
 !/tmux/.tmux.conf
