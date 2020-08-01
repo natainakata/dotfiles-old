@@ -35,9 +35,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'posva/vim-vue'
     Plug 'leafgarland/typescript-vim'
     Plug 'mhinz/vim-sayonara'
-    if !executable('fzf')
-        Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-    endif
+    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
     Plug 'antoinemadec/coc-fzf'
     Plug 'whatyouhide/vim-tmux-syntax'
