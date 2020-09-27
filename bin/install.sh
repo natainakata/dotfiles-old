@@ -50,3 +50,5 @@ install() {
     symlink "$DOTPATH/fish" "$XDG_CONFIG_HOME/fish"
     symlink "$DOTPATH/bin" "$HOME/bin"
 }
+
+install()
