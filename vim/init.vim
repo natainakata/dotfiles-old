@@ -28,6 +28,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'vim-airline/vim-airline-themes'
     Plug 'ryanoasis/vim-devicons'
     " Plug 'Shougo/denite.nvim'
+    " Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'dag/vim-fish'
     Plug 'digitaltoad/vim-pug'
@@ -40,6 +41,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'antoinemadec/coc-fzf'
     Plug 'whatyouhide/vim-tmux-syntax'
     Plug 'tjdevries/coc-zsh'
+    Plug 'DaeZak/crafttweaker-vim-highlighting'
+    Plug 'mattn/emmet-vim'
+    Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 

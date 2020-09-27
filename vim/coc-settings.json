@@ -1,0 +1,10 @@
+{
+    "languageserver": {
+        "zenscript": {
+            "module": "/home/natai/zenscriptserver/server/server.js",
+            "filetypes": ["crafttweaker"],
+            "execArgv": ["--nolazy", "--inspect=6009"],
+            "rootPatterns": [".zsrc"]
+        }
+    }
+}
