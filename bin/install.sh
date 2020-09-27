@@ -51,4 +51,4 @@ install() {
     symlink "$DOTPATH/bin" "$HOME/bin"
 }
 
-install()
+install
