@@ -4,7 +4,15 @@ endfunction
 
 command! ProjectFiles execute 'Files' s:find_git_root()
 command! -bang -nargs=? -complete=dir Files
-    \ call fzf#vim#files(<q-args>, {'options': ['--layout=reverse', '--info=inline', '--preview', 'head -20 {}']}, <bang>0) 
+    \ call fzf#vim#files(<q-args>,
+    \ fzf#vim#with_preview(
+    \   {'options': ['--layout=reverce', '--info=inline', 'head -20 {}']}), <bang>0)
+
+command! -bang -nargs=* Rg
+    \ call fzf#vim#grep(
+    \   'rg --column --line-number --no-heading --color=always --smart-case '.shellescape(<q-args>), 1,
+    \   fzf#vim#with_preview({'options': ['--layout=reverce', '--info=inline', 'head -20 {}']}, <bang>0)
+
 
 autocmd! FileType fzf
 autocmd  FileType fzf set noshowmode noruler nonu
@@ -43,6 +51,11 @@ if has('nvim')
 
   let g:fzf_layout = { 'window': 'call FloatingFZF()' }
 endif
+
+"
+
+" Bind
+
 nmap <silent> <leader>ext :<C-u>Filetypes<CR>
 nmap <silent> <leader>l :<C-u>Lines<CR>
 nmap <silent> <leader>s :<C-u>Rg<CR>
@@ -50,3 +63,4 @@ nmap <silent> <leader>B :<C-u>Buffers<CR>
 nmap <silent> <leader>W :<C-u>Windows<CR>
 nmap <silent> <leader>p :<C-u>History<CR>
 nmap <silent> <leader>j :<C-u>FZF<CR>
+
