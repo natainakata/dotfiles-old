@@ -215,5 +215,3 @@ zplug load --verbose
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/natai/.sdkman"
-[[ -s "/home/natai/.sdkman/bin/sdkman-init.sh" ]] && source "/home/natai/.sdkman/bin/sdkman-init.sh"
