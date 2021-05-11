@@ -18,10 +18,12 @@ call plug#begin('~/.vim/plugged')
     Plug 'tomasr/molokai'
     Plug 'altercation/vim-colors-solarized'
     Plug 'morhetz/gruvbox'
+    Plug 'sickill/vim-monokai'
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-surround'
     Plug 'scrooloose/nerdtree'
     Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+    Plug 'jistr/vim-nerdtree-tabs'
     Plug 'scrooloose/nerdcommenter'
     Plug 'airblade/vim-gitgutter'
     Plug 'vim-airline/vim-airline'
@@ -44,7 +46,9 @@ call plug#begin('~/.vim/plugged')
     Plug 'DaeZak/crafttweaker-vim-highlighting'
     Plug 'mattn/emmet-vim'
     Plug 'editorconfig/editorconfig-vim'
+    Plug 'kassio/neoterm'
+    Plug 'thinca/vim-quickrun'
+    Plug 'w0rp/ale'
 call plug#end()
-
 
 call map(sort(split(globpath(&runtimepath, '_config/*.vim'))), {->[execute('exec "so" v:val')]})

@@ -1,5 +1,6 @@
 /vim/autoload/plug.vim
 /vim/plugged/
+myVimLog
 /fish/completions/
 /fish/conf.d/
 /fish/functions/

@@ -8,7 +8,6 @@ nnoremap <silent> <C-j> :bprev<CR>
 nnoremap <silent> <C-k> :bnext<CR>
 
 " NERDTree
-nmap <silent> <leader>f :NERDTreeToggle<CR>
 
 " 最低限の全角map
 " 動かんわ()

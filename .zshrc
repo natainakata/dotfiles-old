@@ -145,6 +145,17 @@ setopt inc_append_history
 # ヒストリを呼び出してから実行する間に一旦編集できる状態になる
 setopt hist_verify
 
+# 端末タイトルを変える
+
+function chpwd () {
+    echo -ne "\033]0;$(pwd)\007"
+}
+function precmd () {
+    echo -ne "\-33]0;$(history | awk 'NR == 1 {print $1}')\007"
+}
+
+
+
 # -----------------------------
 # Alias
 # -----------------------------
@@ -172,6 +183,8 @@ alias back='pushd'
 alias diff='diff -U1'
 alias tma='tmux attach'
 alias tml='tmux list-window'
+alias pwsh='/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe'
+alias clip='/mnt/c/Windows/System32/clip.exe'
 
 # ---------------------------
 # Plugin
@@ -198,3 +211,9 @@ if ! zplug check --verbose; then
 fi
 
 zplug load --verbose
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/natai/.sdkman"
+[[ -s "/home/natai/.sdkman/bin/sdkman-init.sh" ]] && source "/home/natai/.sdkman/bin/sdkman-init.sh"

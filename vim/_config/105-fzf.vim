@@ -43,11 +43,10 @@ if has('nvim')
 
   let g:fzf_layout = { 'window': 'call FloatingFZF()' }
 endif
-
-nmap <silent> <leader>t :<C-u>FileTypes<CR>
+nmap <silent> <leader>ext :<C-u>Filetypes<CR>
 nmap <silent> <leader>l :<C-u>Lines<CR>
-nmap <silent> <leader>s :<C-u>Ag<CR>
-nmap <silent> <leader>b :<C-u>Buffers<CR>
-nmap <silent> <leader>w :<C-u>Windows<CR>
+nmap <silent> <leader>s :<C-u>Rg<CR>
+nmap <silent> <leader>B :<C-u>Buffers<CR>
+nmap <silent> <leader>W :<C-u>Windows<CR>
 nmap <silent> <leader>p :<C-u>History<CR>
 nmap <silent> <leader>j :<C-u>FZF<CR>
