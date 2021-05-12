@@ -16,4 +16,4 @@ autocmd ColorScheme * highlight LineNr ctermbg=none
 autocmd ColorScheme * highlight Folded ctermbg=none
 autocmd ColorScheme * highlight EndOfBuffer ctermbg=none
 
-colorscheme monokai
+colorscheme solarized
