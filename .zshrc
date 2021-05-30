@@ -1,3 +1,8 @@
+# natai nakata's .zshrc
+
+# -----------------------------
+# General
+# -----------------------------
 # 色付
 autoload -Uz colors ; colors
 
@@ -162,7 +167,6 @@ setopt hist_verify
 # -----------------------------
 # Alias
 # -----------------------------
-
 # グローバルエイリアス
 alias -g L='| less'
 alias -g H='| head'
@@ -189,6 +193,9 @@ alias tml='tmux list-window'
 alias pwsh='/mnt/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe'
 alias clip='/mnt/c/Windows/System32/clip.exe'
 
+# ---------------------------
+# fzf
+# ---------------------------
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 function fzf-src () {
@@ -220,6 +227,14 @@ function fadd() {
         fi
     done
 }
+
+# ---------------------------
+# Tmux
+# ---------------------------
+
+if [ $SHLVL = 1 ]; then
+  tmux
+fi
 
 # ---------------------------
 # Plugin

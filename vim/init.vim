@@ -1,3 +1,5 @@
+" natai nakata's .vimrc
+
 set fenc=utf-8
 set nobackup
 set noswapfile
@@ -42,8 +44,8 @@ call plug#begin('~/.vim/plugged')
     Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
     Plug 'antoinemadec/coc-fzf'
-    Plug 'whatyouhide/vim-tmux-syntax'
     Plug 'tjdevries/coc-zsh'
+    Plug 'whatyouhide/vim-tmux-syntax'
     Plug 'DaeZak/crafttweaker-vim-highlighting'
     Plug 'mattn/emmet-vim'
     Plug 'editorconfig/editorconfig-vim'

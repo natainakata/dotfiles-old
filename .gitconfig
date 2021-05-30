@@ -9,4 +9,4 @@
 [ghq]
     root = ~/src
 [color]
-	ui = auto
+    ui = auto
