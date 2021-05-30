@@ -7,6 +7,9 @@ setopt autopushd
 # 重複はいけない。
 setopt pushdignoredups
 
+# 8ビット文字
+setopt print_eight_bit
+
 # Vim信者になろう
 bindkey -v
 
@@ -75,7 +78,7 @@ ulimit -c 0
 # %*    時間(hh:flag_mm:ss)
 # %T    時間(hh:mm)
 # %t    時間(hh:mm(am/pm))
-PROMPT='%F{cyan}%n@%m%f:%~# '
+# PROMPT='%F{cyan}%n@%m%f:%~# '
 
 # -----------------------------
 # Completion
@@ -147,12 +150,12 @@ setopt hist_verify
 
 # 端末タイトルを変える
 
-function chpwd () {
-    echo -ne "\033]0;$(pwd)\007"
-}
-function precmd () {
-    echo -ne "\-33]0;$(history | awk 'NR == 1 {print $1}')\007"
-}
+# function chpwd () {
+#     echo -ne "\033]0;$(pwd)\007"
+# }
+# function precmd () {
+#     echo -ne "\-33]0;$(history | awk 'NR == 1 {print $1}')\007"
+# }
 
 
 
@@ -228,6 +231,12 @@ fi
 
 source ~/.zplug/init.zsh
 
+zplug "mafredri/zsh-async"
+zplug "plugins/git", from:oh-my-zsh
+zplug "sindresorhus/pure", use:pure.zsh, from:github, as:theme
+zplug "chrissicool/zsh-256color"
+zplug "mrowa44/emojify", as:command
+zplug "rupa/z", use:"*.sh"
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-autosuggestions"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
@@ -243,4 +252,5 @@ if ! zplug check --verbose; then
 fi
 
 zplug load --verbose
+
 

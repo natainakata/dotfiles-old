@@ -19,6 +19,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'altercation/vim-colors-solarized'
     Plug 'morhetz/gruvbox'
     Plug 'sickill/vim-monokai'
+    Plug 'joshdick/onedark.vim'
     Plug 'tpope/vim-fugitive'
     Plug 'tpope/vim-surround'
     Plug 'scrooloose/nerdtree'
@@ -49,6 +50,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'kassio/neoterm'
     Plug 'thinca/vim-quickrun'
     Plug 'w0rp/ale'
+    Plug 'cohama/lexima.vim'
 call plug#end()
 
 call map(sort(split(globpath(&runtimepath, '_config/*.vim'))), {->[execute('exec "so" v:val')]})

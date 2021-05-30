@@ -16,4 +16,12 @@ autocmd ColorScheme * highlight LineNr ctermbg=none
 autocmd ColorScheme * highlight Folded ctermbg=none
 autocmd ColorScheme * highlight EndOfBuffer ctermbg=none
 
-colorscheme solarized
+colorscheme onedark
+
+au ColorScheme * hi LineNr       ctermbg=none ctermfg=240 cterm=italic " 行番号
+au ColorScheme * hi StatusLine   ctermbg=none " アクティブなステータスライン
+au ColorScheme * hi StatusLineNC ctermbg=none " 非アクティブなステータスライン
+au ColorScheme * hi Comment      ctermfg=243 cterm=italic " コメントアウト
+au ColorScheme * hi Statement    ctermfg=45
+au ColorScheme * hi DiffAdd      ctermbg=24  " 追加行
+au ColorScheme * hi Identifier   ctermfg=45 "cterm=bold
