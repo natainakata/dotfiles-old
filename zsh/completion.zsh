@@ -31,6 +31,9 @@ autoload -U colors ; colors ; zstyle ':completion:*' list-colors "${LS_COLORS}"
 # 大文字・小文字を区別しない(大文字を入力した場合は区別する)
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
+# 補完表示を一覧で出したとき、Tabや矢印で選択できる
+zstyle ':completion:*:default' menu select=1
+
 # manの補完をセクション番号別に表示させる
 zstyle ':completion:*:manuals' separate-sections true
 
