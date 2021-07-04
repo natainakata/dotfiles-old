@@ -46,8 +46,9 @@ install() {
     symlink "$DOTPATH/.zshrc" "$HOME/.zshrc"
     symlink "$DOTPATH/.zshenv" "$HOME/.zshenv"
     symlink "$DOTPATH/tmux/.tmux.conf" "$HOME/.tmux.conf"
-    symlink "$DOTPATH/vim" "$XDG_CONFIG_HOME/nvim"
-    symlink "$DOTPATH/fish" "$XDG_CONFIG_HOME/fish"
+    symlink "$DOTPATH/vim" "$HOME/.config/nvim"
+    symlink "$DOTPATH/fish" "$HOME/.config/fish"
+    symlink "$DOTPATH/zsh/" "$HOME/.zsh"
     symlink "$DOTPATH/bin" "$HOME/bin"
 }
 
