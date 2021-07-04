@@ -41,7 +41,7 @@ call plug#begin('~/.vim/plugged')
     Plug 'posva/vim-vue'
     Plug 'leafgarland/typescript-vim'
     Plug 'mhinz/vim-sayonara'
-    Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+    " Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
     Plug 'junegunn/fzf.vim'
     Plug 'antoinemadec/coc-fzf'
     Plug 'tjdevries/coc-zsh'

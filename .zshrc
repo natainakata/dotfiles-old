@@ -30,13 +30,13 @@ zinit light zsh-users/zsh-autosuggestions
 zinit light zdharma/fast-syntax-highlighting
 zinit light chrissicool/zsh-256color
 
-zinit ice pick"async.zsh" src"pure.zsh" 
+zinit ice pick"async.zsh" src"pure.zsh"
 zinit light sindresorhus/pure
 zinit snippet OMZ::plugins/git/git.plugin.zsh
-zinit ice as"program" 
+zinit ice as"program"
 zinit light mrowa44/emojify
-zinit ice pick"*.sh" 
-zinit light rupa/z 
+zinit ice pick"*.sh"
+zinit light rupa/z
 zinit ice wait'0'
 zinit light zsh-users/zsh-completions
 zinit ice pick"init.sh"
@@ -63,7 +63,7 @@ bindkey -v
 
 # フローコントロール無効
 setopt noflowcontrol
-    
+
 # ワイルドカード展開
 setopt extendedglob
 
@@ -105,7 +105,7 @@ ulimit -c 0
 # Tmux
 # ---------------------------
 if [[ ! -n $TMUX && $- == *l* ]]; then
-    # IDを取得 
+    # IDを取得
     ID="`tmux list-sessions`"
     if [[ -z "$ID" ]]; then
         tmux new-session
@@ -118,7 +118,7 @@ if [[ ! -n $TMUX && $- == *l* ]]; then
     elif [[ -n "$ID" ]]; then
         tmux attach-session -t "$ID"
     else
-        : # Start terminal normally 
+        : # Start terminal normally
     fi
 fi
 
@@ -135,4 +135,3 @@ if [ -d $ZSHHOME -a -r $ZSHHOME -a \
             [ \( -f $i -o -h $i \) -a -r $i ] && . $i
     done
 fi
-
