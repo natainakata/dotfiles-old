@@ -10,6 +10,7 @@ export EDITOR=${commands[nvim]:-"vim"}
 path=(
     ~/bin
     ~/.local/bin
+    ~/.deno/bin
     $path
 )
 fpath=(
@@ -21,4 +22,3 @@ fpath=(
 
 export FZF_TMUX=1
 export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
-

@@ -25,6 +25,6 @@ endfunction
 
 
 tnoremap <silent> <esc><esc> <C-\><C-n>
-nnoremap <silent> <leader>T :call Term()<CR>
-
-
+if !exists('g:vscode')
+  nnoremap <silent> <leader>T :call Term()<CR>
+endif

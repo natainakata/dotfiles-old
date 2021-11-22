@@ -2,9 +2,9 @@
     name = "natai"
     email = "satzin0521@gmail.com"
 
-[url "github:"]
-    InsteadOf = https://github.com/
-    InsteadOf = git@github.com:
+# [url "github:"]
+#     InsteadOf = https://github.com/
+#     InsteadOf = git@github.com:
 
 [ghq]
     root = ~/src

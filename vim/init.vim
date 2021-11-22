@@ -53,6 +53,11 @@ call plug#begin('~/.vim/plugged')
     Plug 'thinca/vim-quickrun'
     Plug 'w0rp/ale'
     Plug 'cohama/lexima.vim'
+    Plug 'thinca/vim-scouter'
 call plug#end()
 
 call map(sort(split(globpath(&runtimepath, '_config/*.vim'))), {->[execute('exec "so" v:val')]})
+
+if exists('g:vscode')
+    call map(sort(split(globpath(&runtimepath, 'vscode/*.vim'))), {->[execute('exec "so" v:val')]})
+endif
